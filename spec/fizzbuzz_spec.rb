@@ -19,4 +19,16 @@ describe "fizzbuzz" do
   it "fizzbuzz_to_20 returns #{output}" do
     expect(fizzbuzz_to_20).to eq output
   end 
+  it 'returns "fizz" for the number 3' do
+  expect(3.fizzbuzz).to eq 'fizz'
+  end
+  it 'returns "buzz" for the number 5' do
+  expect(5.fizzbuzz).to eq 'buzz'
+  end 
+  it 'returns "fizzbuzz" for the number 15' do
+  expect(15.fizzbuzz).to eq 'fizzbuzz'
+  end 
+   it 'returns "7" for the number 7' do
+  expect(7.fizzbuzz).to eq 7
+  end 
 end 
