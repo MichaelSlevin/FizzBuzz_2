@@ -12,8 +12,6 @@ end
 
 def fizzbuzz_to_20
   output = []
-  20.times do |i|
-    output.push(fizzbuzz(i+1))
-  end
+  20.times { |i| output << (fizzbuzz(i+1))}
   return output.join("\n")
 end
