@@ -10,3 +10,10 @@ def fizzbuzz(number)
   end 
 end 
 
+def fizzbuzz_to_20
+  output = []
+  20.times do |i|
+    output.push(fizzbuzz(i+1))
+  end
+  return output.join("\n")
+end

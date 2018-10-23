@@ -1,7 +1,7 @@
 require 'fizzbuzz'
 
 
-output = "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\n10\n11\nfizz\n13\n14\nfizzbuzz\n16\n17\nfizz\n19\nbuzz"
+output = "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n11\nfizz\n13\n14\nfizzbuzz\n16\n17\nfizz\n19\nbuzz"
 
 describe "fizzbuzz" do
   it "fizzbuzz(3) returns fizz" do
@@ -14,9 +14,9 @@ describe "fizzbuzz" do
     expect(fizzbuzz(15)).to eq "fizzbuzz"
   end
   it "fizzbuzz(4) returns 4" do
-    expect(fizzbuzz(4)). to eq 4
+    expect(fizzbuzz(4)).to eq 4
   end
   it "fizzbuzz_to_20 returns #{output}" do
-    expect (fizzbuzz_to_20).to eq output
+    expect(fizzbuzz_to_20).to eq output
   end 
 end 
